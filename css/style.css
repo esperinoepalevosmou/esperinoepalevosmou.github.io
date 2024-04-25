@@ -22,14 +22,14 @@ time, mark, audio, video,
 	vertical-align: baseline;
 }
 
-h1, h2, h3 {
+h1, h2, h3, .h1, .h2, .h3 {
 	font-weight: 600;
 	line-height: 25px;
 }
 
-h1 {font-size: 30px;}
-h2 {font-size: 25px;}
-h3 {font-size: 20px;}
+h1, .h1 {font-size: 30px;}
+h2, .h2 {font-size: 25px;}
+h3, .h3 {font-size: 20px;}
 
 strong {font-weight:600;}
 
@@ -54,7 +54,7 @@ ul {
 
 p, ul, li {
 	font-size: 18px;
-	color: #868585;
+	color: #5f5f5f;
 	font-weight: 400;
 	line-height: 30px;
 }
@@ -115,7 +115,7 @@ input[type=submit]::-moz-focus-inner {
 body {
 	font-family: Inter;
 	font-size: 18px;
-	color: #868585;
+	color: #808080;
 	font-weight: 400;
 }
 
@@ -195,7 +195,7 @@ a, a:visited, a:focus, a:active {
 	padding-bottom: 10px;
 }
 
-/* Header-top navigator ------------------------------------------------------------------------------*/
+/* Top-Header navigator ------------------------------------------------------------------------------*/
 .topnav {
 	overflow: hidden;
 	background-color: #212e52;
@@ -657,14 +657,17 @@ a, a:visited, a:focus, a:active {
 	color: #30447a;
 }
 
-#h1-hero {
+.h1-hero {
 	font-size: 35px;
 	line-height: 60px;
 	padding: 40px 0px 40px 0px;
 	text-align: left;
 }
 
-#h2-hero {padding-top: 50px;}
+.h2-hero {
+	padding-top: 50px;
+	color: #30447a;
+}
 
 .hero .info a {
 	font-size: 20px;
@@ -697,7 +700,7 @@ a, a:visited, a:focus, a:active {
 	.hero .bxhero {
 		height: 400px;
 	}
-	#h1-hero {
+	.h1-hero {
 		font-size: 30px;
 		line-height: 50px;
 	}
@@ -708,10 +711,10 @@ a, a:visited, a:focus, a:active {
 		font-size: 16px;
 		padding: 16px;
 	}
-	#h1-hero {
+	.h1-hero {
 		padding: 30px 0px 30px 0px;
 	}
-	#h2-hero {padding-top: 40px;}
+	.h2-hero {padding-top: 40px;}
 }
 
 @media screen and (max-width: 768px) {
@@ -723,7 +726,7 @@ a, a:visited, a:focus, a:active {
 		background-size: contain;
 	}
 	.hero .bxhero .box {height: 300px}
-	#h2-hero {padding-top: 40px;}
+	.h2-hero {padding-top: 40px;}
 }
 
 @media screen and (max-width: 700px) {
@@ -732,11 +735,11 @@ a, a:visited, a:focus, a:active {
 		height: 430px;
 	}
 
-	#h1-hero {
+	.h1-hero {
 		font-size: 25px;
 		line-height: 40px;
 	}
-	#h2-hero {font-size: 22px;}
+	.h2-hero {font-size: 22px;}
 
 	.hero .info a {
 		font-size: 14px;
@@ -751,11 +754,11 @@ a, a:visited, a:focus, a:active {
 	.hero .info {
 		padding: 0px 40px 0px 20px;
 	}
-	#h1-hero {
+	.h1-hero {
 		font-size: 22px;
 		line-height: 30px;
 	}
-	#h2-hero {
+	.h2-hero {
 		font-size: 18px;
 		padding-top: 20px;
 	}
@@ -770,7 +773,7 @@ a, a:visited, a:focus, a:active {
 
 	.hero .bxhero {height: 300px;}
 	.hero .bxhero .box {height: 230px}
-	#h1-hero {font-size: 20px;}
+	.h1-hero {font-size: 20px;}
 	.hero .info {
 		padding: 0px 16px 0px 30px;
 	}
@@ -785,12 +788,12 @@ a, a:visited, a:focus, a:active {
 		padding: 0px 20px 0px 40px;
 	}
 
-	#h1-hero {
+	.h1-hero {
 		font-size: 20px;
 		line-height: 30px;
 		padding: 15px 0px 15px 0px;
 	}
-	#h2-hero {
+	.h2-hero {
 		font-size: 18px;
 		padding-top: 20px;
 	}
@@ -807,12 +810,12 @@ a, a:visited, a:focus, a:active {
 		padding: 0px 15px 0px 25px;
 	}
 
-	#h1-hero {
+	.h1-hero {
 		font-size: 18px;
 		line-height: 25px;
 		padding: 15px 0px 15px 0px;
 	}
-	#h2-hero {
+	.h2-hero {
 		font-size: 16px;
 		padding-top: 18px;
 	}
@@ -830,12 +833,12 @@ a, a:visited, a:focus, a:active {
 		padding: 0px 10px 0px 20px;
 	}
 
-	#h1-hero {
+	.h1-hero {
 		font-size: 16px;
 		line-height: 20px;
 		padding: 12px 0px 12px 0px;
 	}
-	#h2-hero {
+	.h2-hero {
 		font-size: 14px;
 		padding-top: 12px;
 	}
@@ -869,7 +872,7 @@ a, a:visited, a:focus, a:active {
 	padding: 0px 20px 20px 0px;
 }
 
-#h3-post {
+.h3-post {
 	color:  #30447a;
 	padding-bottom: 25px;
 }	
@@ -878,7 +881,7 @@ a, a:visited, a:focus, a:active {
 	overflow: hidden;
 }
 
-#posts {
+.posts-p {
 	padding-bottom: 25px;
 }
 
@@ -912,14 +915,14 @@ a, a:visited, a:focus, a:active {
 		width: 100%;
 		display: inline;
 	}
-	#h3-post {
+	.h3-post {
 		font-size: 20px;
 		padding-bottom: 20px;
 	}
 }
 
 @media screen and (max-width: 320px) {
-	#h3-post {
+	.h3-post {
 		font-size: 16px;
 		padding-bottom: 10px;
 	}
@@ -945,14 +948,14 @@ a, a:visited, a:focus, a:active {
 	padding: 20px 30px 20px 30px;
 }
 
-#h1-news {
+.h2-news {
 	color: #ffffff;
 	text-align: center;
 	padding-bottom: 50px;
 	font-weight: 400;
 }
 
-#p-news {
+.news .info .p-news {
 	color: #a9bee5;
 	font-weight: 600;
 }
@@ -1002,7 +1005,7 @@ a, a:visited, a:focus, a:active {
 		display: inline;
 	}
 	
-	#h1-news {
+	.h2-news {
 		font-size: 20px;
 		padding-bottom: 20px;
 	}
@@ -1017,7 +1020,7 @@ a, a:visited, a:focus, a:active {
 }
 
 @media screen and (max-width: 320px) {
-	#h1-news {
+	.h2-news {
 		font-size: 16px;
 		padding-bottom: 10px;
 	}
@@ -1044,22 +1047,26 @@ a, a:visited, a:focus, a:active {
 	padding: 20px 30px 20px 30px;
 }
 
-#cell {width: 33%;}
+.cell {
+	display: table-cell;
+	padding: 40px 30px 40px 30px;
+	width: 33%;
+}
 
-#h2 {
+.events-h2 {
 	color: #30447a;
 	line-height: 25px;
 	font-weight: 600;
 }
 
-#h1-events {
+.h2-events {
 	color: #30447a;
 	text-align: center;
 	padding-bottom: 50px;
 	font-weight: 400;
 }
 
-#h2 {padding-bottom: 10px;}
+.events .info .h2 {padding-bottom: 10px;}
 
 .current-date {
 	width: 70px;
@@ -1075,7 +1082,7 @@ a, a:visited, a:focus, a:active {
 	line-height: 20px;
 }
 
-#day {
+.current-date .day {
 	background-color: #fff;
 	color: #008bc3;
 	font-size: 30px;
@@ -1085,15 +1092,17 @@ a, a:visited, a:focus, a:active {
 	font-weight: bold;
 }
 
-#date {font-style: italic;}
+.cell .date {font-style: italic;}
 
-#date-hidden {
+.events .info .date-hidden {
 	display: none;
 	font-style: italic;
 	padding: 0px;
 }
 
-#month {color: #fff;}
+.current-date .month {
+	color: #fff;
+}
 
 .events .info {
 	overflow: hidden;
@@ -1134,7 +1143,7 @@ a, a:visited, a:focus, a:active {
 
 @media screen and (max-width: 650px) {
 
-	.events-column, .events-cell {
+	.events-column, .events-cell, .cell {
 		width: 100%;
 		display: inline;
 	}
@@ -1143,17 +1152,12 @@ a, a:visited, a:focus, a:active {
 		display: none;
 	}
 
-	#date-hidden {
+	.events .info .date-hidden {
 		display: block;
 	}
 
-	#h1-events {
-		font-size: 20px;
-		padding-bottom: 20px;
-	}
-
-	#h1-events {
-		font-size: 20px;
+	.events-h2 {
+		font-size: 16px;
 		padding-bottom: 20px;
 	}
 
@@ -1200,6 +1204,12 @@ a, a:visited, a:focus, a:active {
 	line-height: 25px;
 }
 
+.footer .info .p-footer {
+	color: #a9bee5;
+	font-weight: 600;
+}
+
+
 .footer .pic {
 	float: left;
 	margin-right: 25px;
@@ -1238,20 +1248,20 @@ a, a:visited, a:focus, a:active {
 		width: 100%;
 		display: inline;
 	}
-	#h1-news {
+	/*#h1-news {
 		font-size: 20px;
 		padding-bottom: 20px;
-	}
+	}*/
 	.footer .info p {
 		padding-bottom: 10px;
 	}
 }
 
 @media screen and (max-width: 320px) {
-	#h1-news {
+	/*#h1-news {
 		font-size: 16px;
 		padding-bottom: 10px;
-	}
+	}*/
 	.footer .info p {
 		padding-bottom: 10px;
 	}

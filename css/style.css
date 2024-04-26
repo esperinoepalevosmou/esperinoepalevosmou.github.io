@@ -54,7 +54,7 @@ ul {
 
 p, ul, li {
 	font-size: 18px;
-	color: #5f5f5f;
+	color: #8f8f8f;
 	font-weight: 400;
 	line-height: 30px;
 }
@@ -202,8 +202,8 @@ a, a:visited, a:focus, a:active {
 	margin: 0px;
 }
 
-#header {
-	background-color:transparent;
+#header  {
+	background-color:#ffffff;
 	padding-bottom: 20px;
 	color:  #30447a;
 }
@@ -479,12 +479,12 @@ a, a:visited, a:focus, a:active {
 	transition: 0.4s;
 }
 
-#right{
+.accordion .right{
     float:right;
 	padding-right: 40px;
 }
 
-#left{
+.accordion .left{
     float:left;
 	padding-left: 40px;
 	font-weight: 600;
@@ -506,12 +506,12 @@ a, a:visited, a:focus, a:active {
 	.accordion {
 		font-size: 14px;
 	}
-	#right{
+	.accordion .right{
 		padding-left: 50px;
 		width: 100%;
 	}
 	
-	#left{
+	.accordion .left{
 		padding-left: 15px;
 		width: 100%;
 	}
@@ -523,11 +523,11 @@ a, a:visited, a:focus, a:active {
 		font-size: 12px;
 		line-height: 20px;
 	}
-	#right{
+	.accordion .right{
 		padding-left: 20px;
 	}
 	
-	#left {
+	.accordion .left {
 		padding-left: 5px;
 	}
 }
@@ -606,7 +606,7 @@ a, a:visited, a:focus, a:active {
 	height: 225px;
 }
 
-#h2-scroll {
+.h2-scroll {
 	overflow: hidden;
 	color:  #30447a;
 	text-align: center;
@@ -614,14 +614,14 @@ a, a:visited, a:focus, a:active {
 }
 
 @media screen and (max-width: 768px) {
-	#h2-scroll {
+	.h2-scroll {
 		font-size: 18px;
 		padding-top: 50px;
 	}
 }
 
 @media screen and (max-width: 450px) {
-	#h2-scroll {
+	.h2-scroll {
 		font-size: 14px;
 		padding-top: 30px;
 	}
@@ -739,6 +739,7 @@ a, a:visited, a:focus, a:active {
 		font-size: 25px;
 		line-height: 40px;
 	}
+	
 	.h2-hero {font-size: 22px;}
 
 	.hero .info a {

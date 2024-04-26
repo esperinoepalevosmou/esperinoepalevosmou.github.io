@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--[if IE 8]> <html class="ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html lang="el"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
 	<title>Τομέας</title>
@@ -12,7 +12,7 @@
 </head>
 <body>
 
-	<div class="topnav">
+	<div id="nav" class="topnav">
 		<a href="index.html">Ηλεκτρολόγοι Εσπ. ΕΠΑΛ Ευόσμου</a>
 
 		<div class="right">
@@ -22,7 +22,7 @@
 			<a href="photos.html">Φωτογραφίες</a>
 		</div>
 
-		<a href="javascript:void(0)" class="icon" onclick="myFunction()">&#9776;</a>
+		<a href="javascript:void(0)" class="icon" onclick="myNavFunction()">&#9776;</a>
 	</div>
 	<!-- / header -->
 	
@@ -34,9 +34,9 @@
 
 				<h2 class="h3-post" style="padding-top: 30px">Μαθήματα</h2>
 					<button id="b2" class="accordion">
-						<span id="left">Ηλεκτροτεχνία (Κυκλώματα Συνεχούς)</span>
-						<span id="right">Κουτλεμάνη Στεργιανή ΠΕ83 (Θ)</span>
-						<span id="right">Καμά Μαρία ΠΕ83 (Ε) - Παπανίκος Κων/νος ΠΕ83 (Ε)</span>
+						<span class="left">Ηλεκτροτεχνία (Κυκλώματα Συνεχούς)</span>
+						<span class="right">Κουτλεμάνη Στεργιανή ΠΕ83 (Θ)</span><br>
+						<span class="right">Καμά Μαρία ΠΕ83 (Ε) - Παπανίκος Κων/νος ΠΕ83 (Ε)</span>
 					</button>
 					<div class="panel">
 						<p>Μικτό μάθημα (2Θ ώρες/εβδ. και 2Ε ώρες/εβδ.), γραπτώς εξεταζόμενο το θεωρητικό μέρος, προφορικά εξεταζόμενο το εργαστηριακό μέρος.</p>
@@ -47,9 +47,9 @@
 					</div>
 
 					<button id="b2" class="accordion">
-						<span id="left">Εσωτερικές Ηλεκτρικές Εγκαταστάσεις και Ηλεκτρολογικό Σχέδιο</span>
-						<span id="right">Θέος Δημήτριος ΠΕ83 (Θ)</span>
-						<span id="right">Θέος Δημήτριος ΠΕ83 (Ε) - Καμά Μαρία ΠΕ83 (Ε)</span>
+						<span class="left">Εσωτερικές Ηλεκτρικές Εγκαταστάσεις και Ηλεκτρολογικό Σχέδιο</span>
+						<span class="right">Θέος Δημήτριος ΠΕ83 (Θ)</span><br>
+						<span class="right">Θέος Δημήτριος ΠΕ83 (Ε) - Καμά Μαρία ΠΕ83 (Ε)</span>
 					</button>
 					<div class="panel">
 						<p>Μικτό μάθημα (2Θ ώρες/εβδ. και 4Ε ώρες/εβδ.), γραπτώς εξεταζόμενο το θεωρητικό μέρος, προφορικά εξεταζόμενο το εργαστηριακό μέρος.</p>
@@ -74,8 +74,8 @@
 					</div>
 
 					<button id="b2" class="accordion">
-						<span id="left">Εισαγωγή στα Υπολογιστικά Συστήματα και στα Δίκτυα Επικοινωνιών</span>
-						<span id="right">---- - ---- (Ε)</span>
+						<span class="left">Εισαγωγή στα Υπολογιστικά Συστήματα και στα Δίκτυα Επικοινωνιών</span>
+						<span class="right">---- - ---- (Ε)</span>
 					</button>
 					<div class="panel">
 						<p>Εργαστηριακό μάθημα (2Ε ώρες/εβδ.), προφορικά εξεταζόμενο.</p>
@@ -88,8 +88,8 @@
 					</div>
 
 					<button id="b2" class="accordion">
-						<span id="left">Αυτοματισμοί, Αισθητήρες</span>
-						<span id="right">Κουτλεμάνη Στεργιανή ΠΕ83 (Ε) - Παπανίκος Κων/νος ΠΕ83 (Ε)</span>
+						<span class="left">Αυτοματισμοί, Αισθητήρες</span>
+						<span class="right">Κουτλεμάνη Στεργιανή ΠΕ83 (Ε) - Παπανίκος Κων/νος ΠΕ83 (Ε)</span>
 					</button>
 					<div class="panel">
 						<p>Εργαστηριακό μάθημα (2Ε ώρες/εβδ.), προφορικά εξεταζόμενο.</p>
@@ -104,9 +104,8 @@
 				
 
 					<button id="b2" class="accordion">
-						<span id="left">Αναλογικά και Ψηφιακά Ηλεκτρονικά</span>
-						<span id="right">----- (Θ)</span><br>
-						<span id="right">----- (Ε)</span>
+						<span class="left">Αναλογικά και Ψηφιακά Ηλεκτρονικά</span>
+						<span class="right">----- (Θ)<br>----- (Ε)</span>
 					</button>
 					<div class="panel">
 						<p>Μικτό μάθημα (2Θ ώρες/εβδ. και 3Ε ώρες/εβδ.), γραπτώς εξεταζόμενο το θεωρητικό μέρος, προφορικά εξεταζόμενο το εργαστηριακό μέρος.</p>
@@ -120,8 +119,8 @@
 					</div>
 
 					<button id="b2" class="accordion">
-						<span id="left">Αγγλικά</span>
-						<span id="right">Γιαννούλη Ελένη (Θ)</span><br>
+						<span class="left">Αγγλικά</span>
+						<span class="right">Γιαννούλη Ελένη (Θ)</span><br>
 					</button>
 					<div class="panel">
 						<p>Θεωρητικό μάθημα (2Θ ώρες/εβδ.), προφορικά εξεταζόμενο.</p>
@@ -132,25 +131,25 @@
 			</section>
 
 		<div class="image-gallery">
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4420/24-0332-02_Ilektrotechnia_G-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Hlectrotexnia.png" alt="Ηλεκτροτεχνία"></a>				
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4104/24-0082_03_Ilektrologiko-Ergastirio_B-G-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Ilektrologiko-Ergastirio.png" alt="Ηλεκτρολογικό Εργαστήριο - Ηλεκτροτεχνία"></a>		
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/5284/24-0337-02_Ilektrikes_Egkatastaseis_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/EHE(Theory).png" alt="Εσωτερικές Ηλεκτρικές Εγκαταστάσεις"></a>
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/5287/24-0348-02_Stoicheia-Esoterikon-Ilektrikon-Egkatastaseon-kai-Ilektrologikou-Schediou_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Sxedio.png" alt="Στοιχεία ΕΗΕ και Ηλεκτρολογικού Σχεδίου"></a>
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4428/24-0338-02_Stoicheia-Esoterikon-Ilektrikon-Egkatastaseon-kai-Ilektrologikou-Schediou_B-EPAL_Tetradio-Ergasias/" rel="noopener nofollow" target="_blank"><img src="./images/Sxedio(Student).png" alt="Τετράδιο Εργασίας Στοιχεία ΕΗΕ και Ηλεκτρολογικού Σχεδίου"></a>
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/5283/24-0334-02_Ergastirio_Ilektrikon_Egkatastaseon_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Ergastirio-EHE.png" alt="Εργαστήριο Ηλεκτρικών Εγκαταστάσεων"></a>
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4380/24-0304-02_Epikoinonies-kai-Diktya_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/networks.png" alt="Επικοινωνίες και Δίκτυα"></a>
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/5281/24-0318-02_Ergastirio-Diktyon-Ypologiston_B-G-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/networks(erg).png" alt="Εργαστήριο Δικτύων υπολογιστών"></a>
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/5279/24-0310-02_Technologia-Ypologiston-kai-Perifereiakon_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/technologia-ypologiston.png" alt="Εργαστήριο Δικτύων υπολογιστών"></a>
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/5282/24-0328-02_Ekpompi-kai-Lipsi-Tileoptikou-Simatos_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Ekpompi-kai-Lipsi-Tileoptikou-Simatos.png" alt="Εκπομπή και Λήψη Τηλεοπτικού Σήματος"></a>
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4432/24-0340-02_Systimata-Automatismon_Tomos-A_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Automations(Theory).png" alt="Συστήματα Αυτοματισμών"></a>
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/5300/24-0333-02_Ergastirio-Automatismou_B-EPAL_Tetradio-Ergastiriakon-Askiseon/" rel="noopener nofollow" target="_blank"><img src="./images/Automations(Practice).png" alt="Συστήματα Αυτοματισμών - Εργαστήριο"></a>
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4376/24-0302-02_Genika-ilektronika_Meros-A-Theoria_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Genika-ilektronika.png" alt="Γενικά Ηλεκτρονικά"></a>
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4402/24-0320-02_Syllogi-Metafora-kai-Elegchos-Dedomenon_Meros-A-Theoria_B-G-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Dedomena.png" alt="Συλλογή Μεταφορά και Έλεγχος Δεδομένων"></a>
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4388/24-0311-02_Psifiaka-Ilektronika_Meros-A-Theoria_B-G-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Psifiaka-Ilektronika-Α.png" alt="Ψηφιακά Ηλεκτρονικά - Θεωρία"></a>
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/5280/24-0312-02_Psifiaka-Hlektronika_B-Ergastirio_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Psifiaka-Hlektronika-Erg.png" alt="Ψηφιακά Ηλεκτρονικά - Εργαστήριο"></a>
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4378/24-0303-02_Genika-Ilektronika_Meros-B-Ergastirio_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Genika-Ilektronika-B.png" alt="Γενικά Ηλεκτρονικά - Εργαστήριο"></a>
-			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4524/24-0513-02_ESP-Coursebook-Electricity_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/English.png" alt="Αγγλικά"></a>
-			<a href="https://trapeza.iep.edu.gr/public/subjects.php" rel="noopener nofollow" target="_blank"><img src="./images/iep.png" alt="Τράπεζα Θεμάτων"></a>
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4420/24-0332-02_Ilektrotechnia_G-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Books/1.webp" alt="Βιβλίο Ηλεκτροτεχνία" title="Ηλεκτροτεχνία"></a>				
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4104/24-0082_03_Ilektrologiko-Ergastirio_B-G-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Books/2.webp" alt="Βιβλίο Ηλεκτρολογικό Εργαστήριο - Ηλεκτροτεχνία" title="Ηλεκτρολογικό Εργαστήριο"></a>		
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/5284/24-0337-02_Ilektrikes_Egkatastaseis_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Books/3.webp" alt="Βιβλίο Εσωτερικές Ηλεκτρικές Εγκαταστάσεις" title="Εσωτερικές Ηλεκτρικές Εγκαταστάσεις"></a>
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/5287/24-0348-02_Stoicheia-Esoterikon-Ilektrikon-Egkatastaseon-kai-Ilektrologikou-Schediou_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Books/4.webp" alt="Βιβλίο Στοιχεία ΕΗΕ και Ηλεκτρολογικού Σχεδίου" title="Στοιχεία ΕΗΕ και Ηλεκτρολογικού Σχεδίου"></a>
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4428/24-0338-02_Stoicheia-Esoterikon-Ilektrikon-Egkatastaseon-kai-Ilektrologikou-Schediou_B-EPAL_Tetradio-Ergasias/" rel="noopener nofollow" target="_blank"><img src="./images/Books/5.webp" alt="Τετράδιο Εργασίας Στοιχεία ΕΗΕ και Ηλεκτρολογικού Σχεδίου" title="Τετράδιο Εργασίας Στοιχεία ΕΗΕ και Ηλεκτρολογικού Σχεδίου"></a>
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/5283/24-0334-02_Ergastirio_Ilektrikon_Egkatastaseon_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Books/6.webp" alt="Βιβλίο Εργαστήριο Ηλεκτρικών Εγκαταστάσεων" title="Εργαστήριο Ηλεκτρικών Εγκαταστάσεων"></a>
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4380/24-0304-02_Epikoinonies-kai-Diktya_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Books/7.webp" alt="Βιβλίο Επικοινωνίες και Δίκτυα" title="Επικοινωνίες και Δίκτυα"></a>
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/5281/24-0318-02_Ergastirio-Diktyon-Ypologiston_B-G-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Books/8.webp" alt="Βιβλίο Εργαστήριο Δικτύων υπολογιστών" title="Εργαστήριο Δικτύων υπολογιστών"></a>
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/5279/24-0310-02_Technologia-Ypologiston-kai-Perifereiakon_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Books/9.webp" alt="Βιβλίο Τεχνολογία υπολογιστών και περιφερειακών" title="Τεχνολογία υπολογιστών και περιφερειακών"></a>
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/5282/24-0328-02_Ekpompi-kai-Lipsi-Tileoptikou-Simatos_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Books/10.webp" alt="Βιβλίο Εκπομπή και Λήψη Τηλεοπτικού Σήματος" title="Εκπομπή και Λήψη Τηλεοπτικού Σήματος"></a>
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4432/24-0340-02_Systimata-Automatismon_Tomos-A_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Books/11.webp" alt="Βιβλίο Συστήματα Αυτοματισμών" title="Συστήματα Αυτοματισμών"></a>
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/5300/24-0333-02_Ergastirio-Automatismou_B-EPAL_Tetradio-Ergastiriakon-Askiseon/" rel="noopener nofollow" target="_blank"><img src="./images/Books/12.webp" alt="Βιβλίο Συστήματα Αυτοματισμών - Εργαστήριο" title="Συστήματα Αυτοματισμών - Εργαστήριο"></a>
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4376/24-0302-02_Genika-ilektronika_Meros-A-Theoria_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Books/13.webp" alt="Βιβλίο Γενικά Ηλεκτρονικά" title="Γενικά Ηλεκτρονικά"></a>
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4402/24-0320-02_Syllogi-Metafora-kai-Elegchos-Dedomenon_Meros-A-Theoria_B-G-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Books/14.webp" alt="Βιβλίο Συλλογή Μεταφορά και Έλεγχος Δεδομένων" title="Συλλογή Μεταφορά και Έλεγχος Δεδομένων"></a>
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4388/24-0311-02_Psifiaka-Ilektronika_Meros-A-Theoria_B-G-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Books/15.webp" alt="Βιβλίο Ψηφιακά Ηλεκτρονικά - Θεωρία" title="Ψηφιακά Ηλεκτρονικά - Θεωρία"></a>
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/5280/24-0312-02_Psifiaka-Hlektronika_B-Ergastirio_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Books/16.webp" alt="Βιβλίο Ψηφιακά Ηλεκτρονικά - Εργαστήριο" title="Ψηφιακά Ηλεκτρονικά - Εργαστήριο"></a>
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4378/24-0303-02_Genika-Ilektronika_Meros-B-Ergastirio_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Books/17.webp" alt="Βιβλίο Γενικά Ηλεκτρονικά - Εργαστήριο" title="Γενικά Ηλεκτρονικά - Εργαστήριο"></a>
+			<a href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4524/24-0513-02_ESP-Coursebook-Electricity_B-EPAL_Vivlio-Mathiti/" rel="noopener nofollow" target="_blank"><img src="./images/Books/18.webp" alt="Βιβλίο Αγγλικά" title="Αγγλικά"></a>
+			<a href="https://trapeza.iep.edu.gr/public/subjects.php" rel="noopener nofollow" target="_blank"><img src="./images/Books/iep.webp" alt="Τράπεζα Θεμάτων" title="Τράπεζα Θεμάτων"></a>
 		</div>	
 	</div>
 

@@ -13,7 +13,7 @@
 	</head>
 	<body>
 
-		<div class="topnav">
+		<div id="nav" class="topnav">
 			<a href="index.html">Ηλεκτρολόγοι Εσπ. ΕΠΑΛ Ευόσμου</a>
 
 			<div class="right">
@@ -23,7 +23,7 @@
 				<a href="photos.html">Φωτογραφίες</a>
 			</div>
 
-			<a href="javascript:void(0)" class="icon" onclick="myFunction()">&#9776;</a>
+			<a href="javascript:void(0)" class="icon" onclick="myNavFunction()">&#9776;</a>
 		</div>
 		<!-- / header -->
 
@@ -38,8 +38,8 @@
 
 					<h2 class="h3-post" style="padding-top: 30px">Μαθήματα</h2>
 					<button id="b2" class="accordion">
-						<span id="left">Ηλεκτροτεχνία 2</span>
-						<span id="right">Κουτλεμάνη Στεργιανή ΠΕ83 (Θ)</span>
+						<span class="left">Ηλεκτροτεχνία 2</span>
+						<span class="right">Κουτλεμάνη Στεργιανή ΠΕ83 (Θ)</span>
 					</button>
 					<div class="panel">
 						<p>Θεωρητικό μάθημα (3 ώρες/εβδ.), γραπτώς εξεταζόμενο. Είναι ένα από τα
@@ -52,8 +52,8 @@
 					</div>
 
 					<button id="b2" class="accordion">
-						<span id="left">Ηλεκτρικές Μηχανές</span>
-						<span id="right">Καμά Μαρία ΠΕ83 (Θ)</span>
+						<span class="left">Ηλεκτρικές Μηχανές</span>
+						<span class="right">Καμά Μαρία ΠΕ83 (Θ)</span>
 					</button>
 					<div class="panel">
 						<p>Θεωρητικό μάθημα (3 ώρες/εβδ.), γραπτώς εξεταζόμενο. Είναι ένα από τα
@@ -65,9 +65,9 @@
 					</div>
 
 					<button id="b2" class="accordion">
-						<span id="left">Ηλεκτρολογικές Εγκαταστάσεις</span>
-						<span id="right">Καμά Μαρία ΠΕ83 (Θ)</span><br>
-						<span id="right">Καμά Μαρία ΠΕ83 (Ε) - Παπανίκος Κωνσταντίνος ΠΕ83 (Ε)</span>
+						<span class="left">Ηλεκτρολογικές Εγκαταστάσεις</span>
+						<span class="right">Καμά Μαρία ΠΕ83 (Θ)</span><br>
+						<span class="right">Καμά Μαρία ΠΕ83 (Ε) - Παπανίκος Κωνσταντίνος ΠΕ83 (Ε)</span>
 					</button>
 					<div class="panel">
 						<p>Μικτό μάθημα (2Θ ώρες/εβδ. και 3Ε ώρες/εβδ.), γραπτώς εξεταζόμενο μόνο
@@ -82,8 +82,8 @@
 					</div>
 
 					<button id="b2" class="accordion">
-						<span id="left">Εργαστήριο Ηλεκτροτεχνίας και Ηλεκτρικών Μηχανών</span>
-						<span id="right">Θέος Δημήτριος ΠΕ83 (Ε) - Κουτλεμάνη Στεργιανή ΠΕ83 (Ε)</span>
+						<span class="left">Εργαστήριο Ηλεκτροτεχνίας και Ηλεκτρικών Μηχανών</span>
+						<span class="right">Θέος Δημήτριος ΠΕ83 (Ε) - Κουτλεμάνη Στεργιανή ΠΕ83 (Ε)</span>
 					</button>
 					<div class="panel">
 						<p>Εργαστηριακό μάθημα (4Ε ώρες/εβδ.). Το μάθημα χωρίζεται σε δύο
@@ -96,9 +96,9 @@
 					</div>
 
 					<button id="b2" class="accordion">
-						<span id="left">Αυτοματισμοί Προγραμματιζόμενης Λογικής</span>
-						<span id="right">Παπανίκος Κωνσταντίνος ΠΕ83 (Θ)</span><br>
-						<span id="right">Κουτλεμάνη Στεργιανή ΠΕ83 (Ε) - Παπανίκος Κωνσταντίνος ΠΕ83 (Ε)</span>
+						<span class="left">Αυτοματισμοί Προγραμματιζόμενης Λογικής</span>
+						<span class="right">Παπανίκος Κωνσταντίνος ΠΕ83 (Θ)</span><br>
+						<span class="right">Κουτλεμάνη Στεργιανή ΠΕ83 (Ε) - Παπανίκος Κωνσταντίνος ΠΕ83 (Ε)</span>
 					</button>
 					<div class="panel">
 						<p>Μικτό μάθημα (2Θ ώρες/εβδ. και 3Ε ώρες/εβδ.), γραπτώς εξεταζόμενο μόνο
@@ -116,54 +116,54 @@
 				<a
 					href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4420/24-0332-02_Ilektrotechnia_G-EPAL_Vivlio-Mathiti/"
 					rel="noopener nofollow" target="_blank"><img
-						src="./images/Hlectrotexnia.png" alt="Βιβλίο Ηλεκτροτεχνία"
+						src="./images/Books/1.webp" alt="Βιβλίο Ηλεκτροτεχνία"
 						title="Ηλεκτροτεχνία"></a>
 				<a
 					href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4418/24-0331-02_Analysi-Ilektrikon-Kyklomaton_B-G-EPAL_Vivlio-Mathiti/"
-					rel="noopener nofollow" target="_blank"><img src="./images/Cirquits.png"
+					rel="noopener nofollow" target="_blank"><img src="./images/Books/19.webp"
 						alt="Βιβλίο Ανάλυση Ηλεκτρικών Κυκλωμάτων"
 						title="Ανάλυση Ηλεκτρικών Κυκλωμάτων"></a>
 				<a
 					href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4442/24-0345-02_Ilektrikes-Michanes_G-EPAL_Vivlio-Mathiti/"
-					rel="noopener nofollow" target="_blank"><img src="./images/motors.png"
+					rel="noopener nofollow" target="_blank"><img src="./images/Books/20.webp"
 						alt="Βιβλίο Ηλεκτρικές Μηχανές" title="Ηλεκτρικές Μηχανές"></a>
 				<a
 					href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4104/24-0082_03_Ilektrologiko-Ergastirio_B-G-EPAL_Vivlio-Mathiti/"
 					rel="noopener nofollow" target="_blank"><img
-						src="./images/Ilektrologiko-Ergastirio.png"
+						src="./images/Books/2.webp"
 						alt="Βιβλίο Ηλεκτρολογικό Εργαστήριο - Ηλεκτροτεχνία"
 						title="Εργαστήριο Ηλεκτροτεχνίας και Ηλεκτρικών Μηχανών"></a>
 				<a
 					href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4436/24-0342-02_Eidikes-Hlektrikes-Egkatastaseis-Teychos-A_G-EPAL_Vivlio-Mathiti/"
 					rel="noopener nofollow" target="_blank"><img
-						src="./images/egatastasis(A).png"
-						alt="Βιβλίο Ειδικές Ηλεκτρικές Εγκαταστάσεις Τέυχος Α"
+						src="./images/Books/21.webp"
+						alt="Βιβλίο Ειδικές Ηλεκτρικές Εγκαταστάσεις Τεύχος Α"
 						title="Ειδικές Ηλεκτρικές Εγκαταστάσεις Τέυχος Α"></a>
 				<a
 					href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4438/24-0343-02_Eidikes-Ilektrikes-Egkatastaseis_Teuchos-B_G-EPAL_Vivlio-Mathiti/"
 					rel="noopener nofollow" target="_blank"><img
-						src="./images/egatastasis(B).png"
-						alt="Βιβλίο Ειδικές Ηλεκτρικές Εγκαταστάσεις Τέυχος Β"
+						src="./images/Books/22.webp"
+						alt="Βιβλίο Ειδικές Ηλεκτρικές Εγκαταστάσεις Τεύχος Β"
 						title="Ειδικές Ηλεκτρικές Εγκαταστάσεις Τέυχος Β"></a>
 				<a
 					href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4698/24-0344-01_Ergastirio-Ilektrikon-Egkatastaseon_G-EPAL_Vivlio-Mathiti-Emploutismeno/"
 					rel="noopener nofollow" target="_blank"><img
-						src="./images/egatastasis(erg).png"
+						src="./images/Books/23.webp"
 						alt="Βιβλίο Εργαστήριο Ηλεκτρικών Εγκαταστάσεων"
 						title="Εργαστήριο Ηλεκτρικών Εγκαταστάσεων"></a>
 				<a
 					href="http://ebooks.edu.gr/ebooks/v/pdf/8547/5317/24-0346-02_Systimata-Automatismon_B-Tomos_G-EPAL_Vivlio-Mathiti/"
-					rel="noopener nofollow" target="_blank"><img src="./images/PLC(theory).png"
+					rel="noopener nofollow" target="_blank"><img src="./images/Books/24.webp"
 						alt="Βιβλίο Συστήματα Αυταματισμών Β΄τόμος"
 						title="Συστήματα Αυταματισμών Β΄τόμος"></a>
 				<a
 					href="http://ebooks.edu.gr/ebooks/v/pdf/8547/4434/24-0341-02_Automatismoi-kai-Systimata-Automatou-Elegchou_Ergastirio_G-EPAL_Vivlio-Mathiti/"
-					rel="noopener nofollow" target="_blank"><img src="./images/PLC(erg).png"
+					rel="noopener nofollow" target="_blank"><img src="./images/Books/25.webp"
 						alt="Βιβλίο Αυτοματισμοί και Συστήματα Αυτομάτου Ελέγχου (εργαστήριο)"
 						title="Αυτοματισμοί και Συστήματα Αυτομάτου Ελέγχου (εργαστήριο)"></a>
 
 				<a href="https://trapeza.iep.edu.gr/public/subjects.php"
-					rel="noopener nofollow" target="_blank"><img src="./images/iep.png"
+					rel="noopener nofollow" target="_blank"><img src="./images/Books/iep.webp"
 						alt="Τράπεζα Θεμάτων"></a>
 			</div>
 		</div>

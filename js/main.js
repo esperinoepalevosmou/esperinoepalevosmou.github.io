@@ -17,7 +17,17 @@ function myFunction() {
 				  x.className = "topnav";
 			}
 }
- 
+
+function myNavFunction() {
+	var x = document.getElementById("nav");
+	if (x.className === "topnav") {
+		  x.className += " responsive";
+		} else {
+			  x.className = "topnav";
+		}
+}
+
+
 function b1() {
 	var iframe = document.getElementById("iFrame");
 

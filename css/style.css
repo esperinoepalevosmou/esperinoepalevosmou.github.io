@@ -396,19 +396,20 @@ a, a:visited, a:focus, a:active {
 	margin: 20px 80px 20px 80px;
 }
 
-.team-row span {
+.team-row .span {
 	font-weight: 600;
 	color: #30447a;
 }
 
-#h3-team {
+.h3-team {
 	color: #30447a;
 	padding: 30px;
 }
 
-#name {
+.name {
 	padding-top: 20px;
 }
+
 .team-row .img {
 	width: 80%;
     height: auto;
@@ -432,7 +433,19 @@ a, a:visited, a:focus, a:active {
 	cursor: pointer;
 }
 
-#more {display: none;}
+.more {display: none;}
+
+#pdfFrame {
+	width:100%;
+	height:500px;
+	display: none; padding-top: 30px;
+}
+
+#iFrame {
+	width:0;
+	height:0;
+	display: none; 
+}
 
 @media screen and (max-width: 768px) {
 	.team-row {
@@ -455,7 +468,7 @@ a, a:visited, a:focus, a:active {
 		width: 100%;
 	}
 
-	#h3-team {
+	.h3-team {
 		font-size: 18px;
 		padding: 20px;
 	}

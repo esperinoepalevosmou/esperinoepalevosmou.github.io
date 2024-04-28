@@ -27,40 +27,17 @@ function myNavFunction() {
 		}
 }
 
+/* show and hide pdf file*/
 
-function b1() {
-	var iframe = document.getElementById("iFrame");
-
-	iframe.src="https://www.tinkercad.com/embed/aLPgxBxOf0t?editbtn=1";
-
-	if (iframe.style.display === "none") {
-		iframe.style.display = "block";
-		iframe.style.width = "725px";
-        iframe.style.height = "453px";
-        iframe.style.frameborder="0";
-        iframe.style.marginwidth="0"
-        iframe.style.marginheight="0"
-        iframe.style.scrolling="no"
-	} else {
-		iframe.style.display = "none";
-	}
-}
-
-function b2() {
-	var iframe = document.getElementById("pdfFrame");
-	
-	if (iframe.style.display === "none") {
-		iframe.style.display = "block";
-	} else {
-		iframe.style.display = "none";
-	}
-}
+$("#b1").click(function() {
+    $("#pdfFrame").toggle();
+});
 
 
 
 /* show and hide image grid*/
 
-$("#b3").click(function() {
+$("#b2").click(function() {
     $("#ImgGrid").toggle();
 });
 

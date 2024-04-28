@@ -193,7 +193,18 @@ a, a:visited, a:focus, a:active {
 	margin: 0 auto;
 }
 
+.container-media {
+	position: relative;
+	max-width: 100%;
+	margin: 0 auto;
+}
 
+
+@media screen and (min-width: 1900px) {
+	.container-media {
+	  width: 1800px;
+	}
+  }
 /*content
 ------------------------------------------------------------------------------*/
 
@@ -212,6 +223,7 @@ a, a:visited, a:focus, a:active {
 #header  {
 	background-color:#ffffff;
 	padding-bottom: 20px;
+	padding-top: 20px;
 	color:  #30447a;
 }
 
@@ -666,11 +678,10 @@ a, a:visited, a:focus, a:active {
 
 .hero .bxhero .box {
   	width: 800px;
-	height: 30vw;
+	height: 28vw;
 	background-color: rgba(255, 255, 255, 0.6 );
 	background-size: contain;
 	margin-top: 6vw;
-	border-radius: 10vw 10px;
 }
 
 .hero .info {
@@ -703,6 +714,25 @@ a, a:visited, a:focus, a:active {
 	background-color: #30447a;
 	color: #fff;
 	transition: 0.5s ease-out;
+}
+
+@media screen and (min-width: 1441px) {
+	
+	.hero .bxhero {
+		background: url(../images/pic_slide_4K.webp) no-repeat;
+		width: 100%;
+		background-size: contain;
+	}
+
+	.hero .bxhero .box {
+		height: 300px;
+		width: 100%;
+	
+	.h1-hero {
+		font-size: 40px;
+		padding: 50px 0px 50px 0px;
+		}
+	}
 }
 
 @media screen and (max-width: 1200px) {
@@ -771,7 +801,7 @@ a, a:visited, a:focus, a:active {
 
 @media screen and (max-width: 600px) {
 
-	.hero .bxhero {height: 350px;}
+	.hero .bxhero {height: 300px;}
 	.hero .bxhero .box {height: 250px}
 	.hero .info {
 		padding: 0px 40px 0px 20px;
@@ -1065,7 +1095,7 @@ a, a:visited, a:focus, a:active {
 
 .events-cell {
 	display: table-cell;
-	width: 50%;
+	width: 33%;
 	padding: 20px 30px 20px 30px;
 }
 
@@ -1155,7 +1185,8 @@ a, a:visited, a:focus, a:active {
 
 #more-events {display: none;}
 
-.events a {color: #30447a;}
+.events a {
+	color: #30447a;}
 
 .events a:hover {	
 	text-decoration: none;
